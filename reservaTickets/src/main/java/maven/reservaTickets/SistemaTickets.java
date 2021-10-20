@@ -25,6 +25,9 @@ public class SistemaTickets {
 		
 		asientos.rellenarAsientos();
 		
+		traza.info("El usuario a iniciado la aplicación");
+		
+		
 		do{
 			System.out.println("----MENÚ OBTENER TICKET TREN----");
 			System.out.println("1.-Visualizar asientos.");
@@ -37,9 +40,11 @@ public class SistemaTickets {
             	switch(opcion) {
             	case 1: System.out.println("Visualización de los asientos libres (L) y ocupados (O) del tren:");
             			asientos.mostrarAsientos();
+            			traza.info("El usuario ha elegido la opción: "+opcion);
             		break;
             	case 2:
             			asientos.comprobarPrimerAsientoLibre();
+            			traza.info("El usuario ha elegido la opción: "+opcion);
             		break;
             	case 3: try {
             				System.out.print("Introduce fila (1-10): ");
@@ -49,8 +54,9 @@ public class SistemaTickets {
             				asientos.comprarTicket(fila, columna);
     					}catch(ArrayIndexOutOfBoundsException exc) {
     						System.out.println("Fila o asiento no encontrada");
-    						traza.warn("El usuario se ha salido de los límites del array");
+    						traza.error("El usuario se ha salido de los límites del array");
     					}
+            				traza.info("El usuario ha elegido la opción: "+opcion);
             		break;
             	default:
             	}

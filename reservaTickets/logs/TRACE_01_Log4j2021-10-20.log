@@ -1,2 +1,10 @@
 [2021-10-20 21:08:26] [ INFO ] [Asientos:59] El usuario ha elegido una fila o un asiento ocupado. Fila elegida: 1. Columna elegida: 1.
 [2021-10-20 21:08:45] [ WARN ] [SistemaTickets:52] El usuario se ha salido de los límites del array
+[2021-10-20 21:17:29] [ INFO ] [SistemaTickets:41] El usuario ha elegido la opción
+[2021-10-20 21:17:57] [ INFO ] [SistemaTickets:41] El usuario ha elegido la opción 1
+[2021-10-20 21:22:53] [ INFO ] [SistemaTickets:28] El usuario a iniciado la aplicación
+[2021-10-20 21:24:54] [ INFO ] [SistemaTickets:28] El usuario a iniciado la aplicación
+[2021-10-20 21:24:57] [ INFO ] [SistemaTickets:43] El usuario ha elegido la opción: 1
+[2021-10-20 21:25:08] [ INFO ] [SistemaTickets:59] El usuario ha elegido la opción: 3
+[2021-10-20 21:25:13] [ INFO ] [Asientos:59] El usuario ha elegido una fila o un asiento ocupado. Fila elegida: 1. Columna elegida: 1.
+[2021-10-20 21:25:13] [ INFO ] [SistemaTickets:59] El usuario ha elegido la opción: 3
