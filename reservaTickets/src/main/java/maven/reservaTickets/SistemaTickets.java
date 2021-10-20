@@ -1,6 +1,10 @@
 package maven.reservaTickets;
 
 import java.util.Scanner;
+
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 /**
  * 
  * @author Raúl Núñez Sebastián
@@ -12,6 +16,8 @@ public class SistemaTickets {
 		// TODO Auto-generated method stub
 		Scanner teclado=new Scanner(System.in);
 		
+		Logger traza = LogManager.getLogger(SistemaTickets.class);
+		
 		Asientos asientos = new Asientos();
 		
 		int opcion;
@@ -20,7 +26,7 @@ public class SistemaTickets {
 		asientos.rellenarAsientos();
 		
 		do{
-			System.out.println("----MEN� OBTENER TICKET TREN----");
+			System.out.println("----MENÚ OBTENER TICKET TREN----");
 			System.out.println("1.-Visualizar asientos.");
 			System.out.println("2.-Adquirir primer asiento libre.");
 			System.out.println("3.-Elegir y adquirir asiento libre.");
@@ -29,7 +35,7 @@ public class SistemaTickets {
 			opcion=teclado.nextInt();
             teclado.nextLine();
             	switch(opcion) {
-            	case 1: System.out.println("Visualizaci�n de los asientos libres (L) y ocupados (O) del tren:");
+            	case 1: System.out.println("Visualización de los asientos libres (L) y ocupados (O) del tren:");
             			asientos.mostrarAsientos();
             		break;
             	case 2:
@@ -43,6 +49,7 @@ public class SistemaTickets {
             				asientos.comprarTicket(fila, columna);
     					}catch(ArrayIndexOutOfBoundsException exc) {
     						System.out.println("Fila o asiento no encontrada");
+    						traza.warn("El usuario se ha salido de los límites del array");
     					}
             		break;
             	default:

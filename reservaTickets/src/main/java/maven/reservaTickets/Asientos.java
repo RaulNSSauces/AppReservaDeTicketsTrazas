@@ -1,4 +1,8 @@
 package maven.reservaTickets;
+
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 /**
  * 
  * @author Raúl Núñez Sebastián
@@ -9,6 +13,8 @@ public class Asientos {
 	//Declaraci�n de variables de filas y columnas
 	int filas = 10;
 	int columnas = 2;
+	
+	Logger traza = LogManager.getLogger(Asientos.class);
 	
 	//Declaraci�n e inicializaci�n del array de los asientos del tren
 	String[][] asientos = new String[filas][columnas];
@@ -49,7 +55,8 @@ public class Asientos {
 			asientos[fila-1][columna-1]="O";
 			System.out.println("Has comprado un billete para la fila "+fila+" asiento "+columna);
 		}else {
-			System.out.println("Ese asiento ya est� ocupado");
+			System.out.println("Ese asiento ya está ocupado");
+			traza.info("El usuario ha elegido una fila o un asiento ocupado." + " Fila elegida: " + fila+"."+" Columna elegida: "+columna+".");
 		}
 	}
 }
