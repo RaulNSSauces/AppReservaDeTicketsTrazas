@@ -8,3 +8,13 @@
 [2021-10-20 21:25:08] [ INFO ] [SistemaTickets:59] El usuario ha elegido la opción: 3
 [2021-10-20 21:25:13] [ INFO ] [Asientos:59] El usuario ha elegido una fila o un asiento ocupado. Fila elegida: 1. Columna elegida: 1.
 [2021-10-20 21:25:13] [ INFO ] [SistemaTickets:59] El usuario ha elegido la opción: 3
+[2021-10-20 21:32:04] [ INFO ] [SistemaTickets:28] El usuario a iniciado la aplicación
+[2021-10-20 21:32:11] [ INFO ] [SistemaTickets:43] El usuario ha elegido la opción: 1
+[2021-10-20 21:32:25] [ ERROR] [SistemaTickets:57] El usuario se ha salido de los límites del array. 
+java.lang.ArrayIndexOutOfBoundsException: Index -2 out of bounds for length 10
+	at maven.reservaTickets.Asientos.comprarTicket(Asientos.java:54)
+	at maven.reservaTickets.SistemaTickets.main(SistemaTickets.java:54)
+[2021-10-20 21:32:25] [ INFO ] [SistemaTickets:59] El usuario ha elegido la opción: 3
+[2021-10-20 21:32:47] [ INFO ] [SistemaTickets:59] El usuario ha elegido la opción: 3
+[2021-10-20 21:32:51] [ INFO ] [Asientos:59] El usuario ha elegido una fila o un asiento ocupado. Fila elegida: 1. Columna elegida: 1.
+[2021-10-20 21:32:51] [ INFO ] [SistemaTickets:59] El usuario ha elegido la opción: 3

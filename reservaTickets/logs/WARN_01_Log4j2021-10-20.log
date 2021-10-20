@@ -1,1 +1,5 @@
 [2021-10-20 21:08:45] [ WARN ] [SistemaTickets:52] El usuario se ha salido de los límites del array
+[2021-10-20 21:32:25] [ ERROR] [SistemaTickets:57] El usuario se ha salido de los límites del array. 
+java.lang.ArrayIndexOutOfBoundsException: Index -2 out of bounds for length 10
+	at maven.reservaTickets.Asientos.comprarTicket(Asientos.java:54)
+	at maven.reservaTickets.SistemaTickets.main(SistemaTickets.java:54)

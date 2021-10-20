@@ -54,7 +54,7 @@ public class SistemaTickets {
             				asientos.comprarTicket(fila, columna);
     					}catch(ArrayIndexOutOfBoundsException exc) {
     						System.out.println("Fila o asiento no encontrada");
-    						traza.error("El usuario se ha salido de los límites del array");
+    						traza.error("El usuario se ha salido de los límites del array. ",exc);
     					}
             				traza.info("El usuario ha elegido la opción: "+opcion);
             		break;
